@@ -635,12 +635,14 @@ button {
 .tagline {
   width: 100%;
   text-align: center;
-  padding: 100px 0 80px;
+  padding-top: 80px;
 }
 
 .tagline-text {
   display: inline-block;
   max-width: 780px;
+  width: 100%;
+  padding: 0 20px;
   margin: 0 auto;
   text-align: center;
   font-size: 1.33rem;
@@ -661,9 +663,11 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -673,7 +677,18 @@ button {
 .inform__left {
   max-width: 300px;
   width: 100%;
-  margin: 0 150px;
+  min-height: 612px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 0;
 }
 
 .inform__right {
@@ -805,9 +820,9 @@ button {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 20px;
 }
 
@@ -903,8 +918,9 @@ button {
 .about {
   position: relative;
   width: 100%;
-  min-height: 500px;
+  min-height: 50 0px;
   margin: 80px 0;
+  padding: 40px 0;
   background: top center no-repeat;
   background-size: cover;
   display: -webkit-box;
@@ -1215,5 +1231,60 @@ button::placeholder {
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
   fill: #656823;
+}
+
+/* Media */
+/* Media */
+@media (max-width: 1025px) {
+  /* Settings */
+  html {
+    font-size: 16px;
+  }
+  /* Section Mainscreen */
+  .btn {
+    padding: 7px 50px;
+  }
+  /* Section Inform */
+  .inform__right {
+    max-width: 500px;
+  }
+  .item__static {
+    width: 100%;
+  }
+}
+
+@media (max-width: 770px) {
+  /* Settings */
+  html {
+    font-size: 14px;
+  }
+  /* Section Mainscreen */
+  .main__screen-text {
+    text-align: center;
+    top: 50%;
+    left: 25%;
+  }
+  .main__screen-text .main__screen-title {
+    margin-bottom: 5px;
+  }
+  /* Section Inform */
+  .inform__item {
+    padding: 20px;
+  }
+  .inform__item .inform__left {
+    min-height: 350px;
+  }
+  /* Section Catalog */
+  .catalog__menu-item {
+    margin-right: 0;
+  }
+  .item-lg {
+    min-width: 100%;
+    margin: 20px 0;
+  }
+  .item-sm {
+    max-width: 48%;
+    min-width: 25%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
