@@ -1287,4 +1287,10 @@ button::placeholder {
     min-width: 25%;
   }
 }
+
+@media (max-width: 480px) {
+    .main__screen-text {
+        left: 10%;
+    }
+}
 /*# sourceMappingURL=main.css.map */
