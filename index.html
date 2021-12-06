@@ -19,9 +19,12 @@
                 <a href="" class="header__logo"><img src="img/logo.png" alt=""></a>
 
                 <nav class="header__nav">
+                    <div class="nav__burger">
+                        <span class="burger"></span>
+                    </div>
                     <ul class="nav__items">
                         <li id="dropdown__menu" class="nav__item">
-                            <a href="">Каталог</a>
+                            <span>Каталог</span>
                             <ul class="catalog__items">
                                 <li class="catalog__item">
                                     <a href="">Аксессуары</a>
@@ -119,10 +122,10 @@
                                     <div class="slider__dot"></div>
                                 </div>
                                 <div class="slider__items">
-                                    <div class="slider__item active__slider" style="background-image: url('./img/bloger.jpg');"></div>
-                                    <div class="slider__item" style="background-image: url('./img/dev.jpg');"></div>
-                                    <div class="slider__item" style="background-image: url('./img/alg.jpg');"></div>
-                                    <div class="slider__item" style="background-image: url('./img/form.jpg');"></div>
+                                    <div class="inform-img slider__item active__slider" style="background-image: url('./img/bloger.jpg');"></div>
+                                    <div class="inform-img slider__item" style="background-image: url('./img/dev.jpg');"></div>
+                                    <div class="inform-img slider__item" style="background-image: url('./img/alg.jpg');"></div>
+                                    <div class="inform-img slider__item" style="background-image: url('./img/form.jpg');"></div>
                                 </div>
                             </div>
                         </div>
@@ -132,7 +135,7 @@
                         <div class="inform__right">
                             <div class="inform__slider">
                                 <div class="slider__items">
-                                    <div class="item__static" style="background-image: url('./img/form.jpg');"></div>
+                                    <div class="inform-img item__static" style="background-image: url('./img/form.jpg');"></div>
                                 </div>
                             </div>
                         </div>
@@ -163,7 +166,7 @@
                         <div class="inform__right">
                             <div class="inform__slider">
                                 <div class="slider__items">
-                                    <div class="item__static" style="background-image: url('./img/alg.jpg');"></div>
+                                    <div class="inform-img item__static" style="background-image: url('./img/alg.jpg');"></div>
                                 </div>
                             </div>
                         </div>
@@ -173,7 +176,7 @@
                         <div class="inform__right">
                             <div class="inform__slider">
                                 <div class="slider__items">
-                                    <div class="item__static" style="background-image: url('./img/dev.jpg');"></div>
+                                    <div class="inform-img item__static" style="background-image: url('./img/dev.jpg');"></div>
                                 </div>
                             </div>
                         </div>
@@ -204,7 +207,7 @@
                         <div class="inform__right">
                             <div class="inform__slider">
                                 <div class="slider__items">
-                                    <div class="item__static" style="background-image: url('./img/bloger.jpg');"></div>
+                                    <div class="inform-img item__static" style="background-image: url('./img/bloger.jpg');"></div>
                                 </div>
                             </div>
                         </div>
@@ -336,12 +339,12 @@
                         </a>
                 </div>
             </div>
-
         </div>
     </footer>
 
     <script src="js/slider.js "></script>
     <script src="js/feedback.js "></script>
+    <script src="js/burger.js "></script>
 </body>
 
 </html>
